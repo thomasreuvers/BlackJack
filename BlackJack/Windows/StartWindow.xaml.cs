@@ -17,9 +17,17 @@ namespace BlackJack.Windows
     /// </summary>
     public partial class StartWindow : Window
     {
+        private readonly MainWindow _gameWindow = new MainWindow();
+
         public StartWindow()
         {
             InitializeComponent();
+        }
+
+        private void StartBtn_Click(object sender, RoutedEventArgs e)
+        {
+            _gameWindow.Show();
+            Close();
         }
     }
 }

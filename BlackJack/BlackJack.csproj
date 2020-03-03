@@ -7,10 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Blackjack_table.jpg" />
     <None Remove="Resources\StartmenuBackground.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Blackjack_table.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\StartmenuBackground.jpg" />
   </ItemGroup>
 

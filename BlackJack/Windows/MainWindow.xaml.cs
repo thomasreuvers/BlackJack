@@ -20,9 +20,27 @@ namespace BlackJack.Windows
     /// </summary>
     public partial class MainWindow : Window
     {
+        private StartWindow _startMenuWindow;
+
         public MainWindow()
         {
             InitializeComponent();
         }
+
+
+        /// <summary>
+        /// When "Escape" is clicked return to start menu window and dispose game window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainWindow_OnKeyDown(object sender, KeyEventArgs e)
+        {
+            if (!e.Key.Equals(Key.Escape)) return;
+            _startMenuWindow = new StartWindow();
+            _startMenuWindow.Show();
+            Close();
+        }
     }
+
+    
 }
