@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlackJack.Windows"
         mc:Ignorable="d"
-        Title="Blackjack by Thomas" Height="450" Width="320" ResizeMode="NoResize" SizeToContent="Manual">
+        Title="Blackjack by Thomas" Height="450" Width="320" ResizeMode="NoResize" SizeToContent="Manual" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid>
             <Image Source="../Resources/StartmenuBackground.jpg" Stretch="UniformToFill" StretchDirection="DownOnly"/>

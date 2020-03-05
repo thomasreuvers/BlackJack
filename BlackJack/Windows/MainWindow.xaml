@@ -6,10 +6,14 @@
         xmlns:local="clr-namespace:BlackJack"
         mc:Ignorable="d"
         Title="BlackJack" Height="500" Width="800"
-        KeyDown="MainWindow_OnKeyDown">
+        KeyDown="MainWindow_OnKeyDown" WindowStartupLocation="CenterScreen">
     <Grid>
         <Image Source="../Resources/Blackjack_table.jpg" StretchDirection="Both" Stretch="Fill"/>
 
-        <Image x:Name="PlayerCardOne" Width="80" Height="100" Margin="144,335,576,49"/>
+        <StackPanel x:Name="PlayerHand" Height="200" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+
+        </StackPanel>
+        <Image x:Name="PlayerCardOne" Margin="115,260,600,115"/>
+        <Image x:Name="PlayerCardTwo" Margin="221,260,494,115"/>
     </Grid>
 </Window>
