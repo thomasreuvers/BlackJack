@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,9 +22,14 @@ namespace BlackJack.Windows
     {
         private StartWindow _startMenuWindow;
 
+        private List<Card> _cards = new List<Card>();
+
         public MainWindow()
         {
             InitializeComponent();
+            FillCardList();
+
+            PlayerCardOne.Source = new BitmapImage(_cards[0].FileLocation);
         }
 
 
@@ -39,6 +44,11 @@ namespace BlackJack.Windows
             _startMenuWindow = new StartWindow();
             _startMenuWindow.Show();
             Close();
+        }
+
+        private void FillCardList()
+        {
+            _cards.Add(new Card{FileLocation = new Uri("../Resources/Cards/AceOfClub.png", UriKind.Relative), IsAce = true, Value = 0});
         }
     }
 

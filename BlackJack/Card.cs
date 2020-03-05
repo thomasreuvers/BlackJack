@@ -6,7 +6,7 @@ namespace BlackJack
 {
     public class Card
     {
-        public string FileLocation { get; set; }
+        public Uri FileLocation { get; set; }
 
         public int Value { get; set; }
 

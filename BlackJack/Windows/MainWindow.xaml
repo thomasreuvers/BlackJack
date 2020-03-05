@@ -8,6 +8,8 @@
         Title="BlackJack" Height="500" Width="800"
         KeyDown="MainWindow_OnKeyDown">
     <Grid>
-        <Image Source="../Resources/Blackjack_table.jpg" StretchDirection="Both" Stretch="Fill"></Image>
+        <Image Source="../Resources/Blackjack_table.jpg" StretchDirection="Both" Stretch="Fill"/>
+
+        <Image x:Name="PlayerCardOne" Width="80" Height="100" Margin="144,335,576,49"/>
     </Grid>
 </Window>

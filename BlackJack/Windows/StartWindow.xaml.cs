@@ -29,5 +29,11 @@ namespace BlackJack.Windows
             _gameWindow.Show();
             Close();
         }
+
+        private void QuitBtn_Click(object sender, RoutedEventArgs e)
+        { 
+            Close();
+            System.Windows.Application.Current.Shutdown();
+        }
     }
 }

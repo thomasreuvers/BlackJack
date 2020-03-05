@@ -8,13 +8,28 @@
 
   <ItemGroup>
     <None Remove="Resources\Blackjack_table.jpg" />
+    <None Remove="Resources\cards.jpg" />
+    <None Remove="Resources\Cards\AceOfClub.png" />
     <None Remove="Resources\StartmenuBackground.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="{d37e2a3e-8545-3a39-9f4f-31827c9124ab}">
+      <Guid>d37e2a3e-8545-3a39-9f4f-31827c9124ab</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Resources\Blackjack_table.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\cards.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Cards\AceOfClub.png" />
     <Resource Include="Resources\StartmenuBackground.jpg" />
   </ItemGroup>
 
