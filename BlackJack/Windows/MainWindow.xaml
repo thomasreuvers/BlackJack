@@ -10,7 +10,7 @@
     <Grid>
         <Image Source="../Resources/Blackjack_table.jpg" StretchDirection="Both" Stretch="Fill"/>
 
-        <StackPanel x:Name="PlayerHand" Height="200" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+        <StackPanel x:Name="PlayerHand" Height="100" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="20">
 
         </StackPanel>
         <Image x:Name="PlayerCardOne" Margin="115,260,600,115"/>
