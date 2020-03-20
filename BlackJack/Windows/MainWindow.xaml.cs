@@ -115,8 +115,6 @@ namespace BlackJack.Windows
             _cards.RemoveAt(random);
         }
 
-        //Todo: check if player or bank has ACE
-
         private void CheckHand()
         {
             foreach (var card in _playersHand.Where(x => x.IsAce))
