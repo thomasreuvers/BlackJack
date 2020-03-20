@@ -10,10 +10,43 @@
     <Grid>
         <Image Source="../Resources/Blackjack_table.jpg" StretchDirection="Both" Stretch="Fill"/>
 
-        <StackPanel x:Name="PlayerHand" Height="100" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="20">
+        <StackPanel x:Name="BankHand" Height="100" Orientation="Horizontal" VerticalAlignment="Top" Margin="20,142,20,0" />
 
-        </StackPanel>
-        <Image x:Name="PlayerCardOne" Margin="115,260,600,115"/>
-        <Image x:Name="PlayerCardTwo" Margin="221,260,494,115"/>
+        <StackPanel x:Name="PlayerHand" Height="100" Orientation="Horizontal" VerticalAlignment="Top" Margin="20,283,20,0" />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="2" Grid.Column="3" Height="30" Width="100" VerticalAlignment="Bottom" Margin="0, 10" Click="HitBtn_Click">Hit</Button>
+            <Button Grid.Row="2" Grid.Column="2" Height="30" Width="100" VerticalAlignment="Bottom" Margin="0, 10"  Click="StandBtn_Click">Stand</Button>
+
+            <Label Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Top" Margin="0, 10" x:Name="PointsLabel" Height="30" Width="100" VerticalAlignment="Top" FontSize="15"></Label>
+        </Grid>
+
+
+        <Grid x:Name="EndMenu" Background="White" Visibility="Hidden" Opacity="0.5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="20" x:Name="MenuTxt">Placeholder</Label>
+        </Grid>
+
     </Grid>
 </Window>
