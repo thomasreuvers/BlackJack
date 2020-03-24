@@ -38,6 +38,7 @@ namespace BlackJack.Windows
             Player
         }
 
+
         public MainWindow()
         {
             InitializeComponent();
@@ -53,6 +54,7 @@ namespace BlackJack.Windows
 
 
         /// <summary>
+        /// When "R" is clicked restart game.
         /// When "Escape" is clicked return to start menu window and dispose game window.
         /// </summary>
         /// <param name="sender"></param>
@@ -270,7 +272,6 @@ namespace BlackJack.Windows
             _cards.Add(new Card { FileLocation = new Uri("../Resources/Cards/QH.png", UriKind.Relative), IsAce = false, Value = 10 });
             _cards.Add(new Card { FileLocation = new Uri("../Resources/Cards/QS.png", UriKind.Relative), IsAce = false, Value = 10 });
         }
-
 
     }
 
